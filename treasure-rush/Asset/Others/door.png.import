@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://stg0p311h5bu"
-path="res://.godot/imported/DarkCastle (Cópia).png-4e2be5bcead01bcb08c27f3d62c2aff6.ctex"
+uid="uid://c2vfi6d67rnxs"
+path="res://.godot/imported/door.png-c4ef41fdf04c258f60530e13703ca069.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Asset/Starter Tiles Platformer/DarkCastle (Cópia).png"
-dest_files=["res://.godot/imported/DarkCastle (Cópia).png-4e2be5bcead01bcb08c27f3d62c2aff6.ctex"]
+source_file="res://Asset/Others/door.png"
+dest_files=["res://.godot/imported/door.png-c4ef41fdf04c258f60530e13703ca069.ctex"]
 
 [params]
 

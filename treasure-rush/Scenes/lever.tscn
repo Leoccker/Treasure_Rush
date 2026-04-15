@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://cbsv2f3nxow5s"]
+
+[ext_resource type="Texture2D" uid="uid://dvycgxlw62mb3" path="res://Asset/Others/alavanca.png" id="1_6kuia"]
+[ext_resource type="Script" uid="uid://bjwge1lgpnf30" path="res://Scripts/lever.gd" id="2_6kuia"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ab4ky"]
+atlas = ExtResource("1_6kuia")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a43ba"]
+atlas = ExtResource("1_6kuia")
+region = Rect2(16, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_burcv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ab4ky")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a43ba")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Door" type="AnimatedSprite2D" unique_id=2024678898]
+sprite_frames = SubResource("SpriteFrames_burcv")
+autoplay = "default"
+frame = 1
+frame_progress = 0.22050476
+script = ExtResource("2_6kuia")
