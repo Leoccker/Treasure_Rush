@@ -8,14 +8,14 @@ radius = 23.0
 [node name="Rock" type="Node2D" unique_id=2059344390]
 
 [node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=2070905299]
-position = Vector2(2, 0)
-mass = 72.331
+position = Vector2(4, 0)
+mass = 0.174
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1169172890]
-position = Vector2(-1, 0)
+position = Vector2(-4, 0)
 shape = SubResource("CircleShape2D_cbt5b")
 
 [node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=620868358]
-position = Vector2(-1, 0)
+position = Vector2(-4, 0)
 scale = Vector2(0.2734375, 0.28125)
 texture = ExtResource("1_mg785")

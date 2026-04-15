@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1775696616
+::res://::1776291884
 icon.svg::CompressedTexture2D::6515281322927760158::1775694696::1775694696::1::::<><><>0<>0<>c2880f33bae11ffb752ce3bf5c4d2dd6<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://Asset/::1775695778
 ::res://Asset/Characters/::1775695853
@@ -195,9 +195,9 @@ Water_2_16x16.png::CompressedTexture2D::7561901414636853013::1775694696::1775694
 Water_3_16x16.png::CompressedTexture2D::4122720727679564215::1775694696::1775694696::1::::<><><>0<>0<>4106ced79b932d70777bb09ff46da7b2<>res://.godot/imported/Water_3_16x16.png-9b6de332a0d2d01ee2c18fc109861f5e.ctex::
 Water_4_16x16.png::CompressedTexture2D::5915918981090658127::1775694696::1775694696::1::::<><><>0<>0<>e98e5765862b39bbe75128f0af28f0fc<>res://.godot/imported/Water_4_16x16.png-a436b6109d54e7e6585c3363c1fa9478.ctex::
 Water_5_16x16.png::CompressedTexture2D::4379015519433882997::1775694696::1775694696::1::::<><><>0<>0<>ed1d5660886d965c3f3254204049a9fe<>res://.godot/imported/Water_5_16x16.png-c37e553cdedb9beef08310c2630ad00e.ctex::
-::res://Scenes/::1775696616
-node_2d.tscn::PackedScene::2927761835494663545::1775696536::0::1::::<><><>0<>0<><>::uid://c5hkfh637hn5q::::res://Asset/Others/Assets.png<>uid://b3hhi5sbogxaf::::res://Scenes/player.tscn<>uid://clcy0oj71nm5n::::res://Scenes/rock.tscn
-player.tscn::PackedScene::4366599858708421009::1775696223::0::1::::<><><>0<>0<><>::uid://bpg0pwm503bpx::::res://character_body_2d.gd<>uid://b5u2818f6mqt0::::res://Asset/Others/props1.png
-rock.tscn::PackedScene::5550550006306041345::1775696604::0::1::::<><><>0<>0<><>::uid://cy3by4uv54f6e::::res://icon.svg
+::res://Scenes/::1776291844
+Leve1.tscn::PackedScene::2927761835494663545::1775872001::0::1::::<><><>0<>0<><>::uid://c5hkfh637hn5q::::res://Asset/Others/Assets.png<>uid://b3hhi5sbogxaf::::res://Scenes/player.tscn<>uid://clcy0oj71nm5n::::res://Scenes/rock.tscn
+player.tscn::PackedScene::4366599858708421009::1775696223::0::1::::<><><>0<>0<><>::uid://bpg0pwm503bpx::::res://Scripts/character_body_2d.gd<>uid://b5u2818f6mqt0::::res://Asset/Others/props1.png
+rock.tscn::PackedScene::5550550006306041345::1776291844::0::1::::<><><>0<>0<><>::uid://cy3by4uv54f6e::::res://icon.svg
 ::res://Scripts/::1775696498
 character_body_2d.gd::GDScript::3453185491964609993::1775696498::0::1::::<>CharacterBody2D<><>0<>0<><>::
