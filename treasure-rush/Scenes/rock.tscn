@@ -1,21 +1,17 @@
 [gd_scene format=3 uid="uid://clcy0oj71nm5n"]
 
-[ext_resource type="Texture2D" uid="uid://cy3by4uv54f6e" path="res://icon.svg" id="1_mg785"]
+[ext_resource type="Texture2D" uid="uid://b5y4pujwgniaf" path="res://Asset/Others/rock.png" id="1_lgx4v"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cbt5b"]
-radius = 23.0
+radius = 48.0
 
-[node name="Rock" type="Node2D" unique_id=2059344390]
+[node name="Rock" type="RigidBody2D" unique_id=1226513812]
+mass = 16.426
 
-[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=2070905299]
-position = Vector2(4, 0)
-mass = 0.174
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1169172890]
-position = Vector2(-4, 0)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1169172890]
 shape = SubResource("CircleShape2D_cbt5b")
 
-[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=620868358]
-position = Vector2(-4, 0)
-scale = Vector2(0.2734375, 0.28125)
-texture = ExtResource("1_mg785")
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=620868358]
+position = Vector2(0, 4.7683716e-07)
+scale = Vector2(3.3183591, 3.2851565)
+texture = ExtResource("1_lgx4v")
