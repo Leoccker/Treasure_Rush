@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dvycgxlw62mb3" path="res://Asset/Others/alavanca.png" id="1_6kuia"]
 [ext_resource type="Script" uid="uid://bjwge1lgpnf30" path="res://Scripts/lever.gd" id="2_6kuia"]
+[ext_resource type="AudioStream" uid="uid://rh44e5yvdc3l" path="res://Sounds/lever.wav" id="3_fhlr4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ab4ky"]
 atlas = ExtResource("1_6kuia")
@@ -25,9 +26,27 @@ animations = [{
 "speed": 10.0
 }]
 
-[node name="Door" type="AnimatedSprite2D" unique_id=2024678898]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6kuia"]
+size = Vector2(14.5, 21.717535)
+
+[node name="Lever" type="AnimatedSprite2D" unique_id=2024678898]
 sprite_frames = SubResource("SpriteFrames_burcv")
-autoplay = "default"
 frame = 1
 frame_progress = 0.22050476
 script = ExtResource("2_6kuia")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1808134320]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=276428545]
+position = Vector2(0, 0.7775977)
+scale = Vector2(0.9999999, 0.9999999)
+shape = SubResource("RectangleShape2D_6kuia")
+debug_color = Color(1, 1, 1, 0.41960785)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1658869889]
+stream = ExtResource("3_fhlr4")
+
+[connection signal="body_entered" from="Area2D" to="." method="_body_entered_on_lever"]
+[connection signal="child_entered_tree" from="Area2D/CollisionShape2D" to="." method="_lever_entered"]
