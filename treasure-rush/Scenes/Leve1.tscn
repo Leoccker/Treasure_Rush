@@ -1,8 +1,9 @@
 [gd_scene format=4 uid="uid://bhyh2r8vrs6s0"]
 
 [ext_resource type="Texture2D" uid="uid://c5hkfh637hn5q" path="res://Asset/Others/Assets.png" id="1_wtcfe"]
-[ext_resource type="PackedScene" uid="uid://b3hhi5sbogxaf" path="res://Scenes/player.tscn" id="2_0e48y"]
+[ext_resource type="PackedScene" uid="uid://b3hhi5sbogxaf" path="res://Scenes/Player.tscn" id="2_0e48y"]
 [ext_resource type="PackedScene" uid="uid://clcy0oj71nm5n" path="res://Scenes/rock.tscn" id="3_epypp"]
+[ext_resource type="PackedScene" uid="uid://cbsv2f3nxow5s" path="res://Scenes/lever.tscn" id="4_ie48d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0e48y"]
 texture = ExtResource("1_wtcfe")
@@ -398,3 +399,7 @@ position = Vector2(123, 55)
 
 [node name="Rock" parent="." unique_id=1226513812 instance=ExtResource("3_epypp")]
 position = Vector2(477, 319)
+
+[node name="Lever" parent="." unique_id=2024678898 instance=ExtResource("4_ie48d")]
+position = Vector2(103, 472)
+scale = Vector2(3, 2.75)

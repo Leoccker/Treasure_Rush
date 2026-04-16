@@ -4,3 +4,6 @@ res://Scenes/player.tscn
 res://door.gd
 res://Scenes/door.tscn
 res://Scenes/lever.tscn
+res://Scripts/door.gd
+res://Scripts/lever.gd
+res://Scenes/Player.tscn
