@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://b3hhi5sbogxaf" path="res://Scenes/Player.tscn" id="2_0e48y"]
 [ext_resource type="PackedScene" uid="uid://clcy0oj71nm5n" path="res://Scenes/rock.tscn" id="3_epypp"]
 [ext_resource type="PackedScene" uid="uid://cbsv2f3nxow5s" path="res://Scenes/lever.tscn" id="4_ie48d"]
+[ext_resource type="PackedScene" uid="uid://dnephby7ecnx0" path="res://Scenes/preasure_plate.tscn" id="5_i8jss"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0e48y"]
 texture = ExtResource("1_wtcfe")
@@ -399,7 +400,13 @@ position = Vector2(123, 55)
 
 [node name="Rock" parent="." unique_id=1226513812 instance=ExtResource("3_epypp")]
 position = Vector2(477, 319)
+collision_layer = 3
+collision_mask = 3
 
 [node name="Lever" parent="." unique_id=2024678898 instance=ExtResource("4_ie48d")]
-position = Vector2(103, 472)
+position = Vector2(320, 352)
 scale = Vector2(3, 2.75)
+
+[node name="preasure_plate" parent="." unique_id=849103481 instance=ExtResource("5_i8jss")]
+position = Vector2(96.00001, 504)
+scale = Vector2(3, 3)

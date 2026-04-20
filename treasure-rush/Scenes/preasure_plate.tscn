@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dnephby7ecnx0"]
+
+[ext_resource type="Texture2D" uid="uid://bc5sjsqfxj8dr" path="res://Asset/Others/placa de pressao.png" id="1_w1nol"]
+[ext_resource type="Script" uid="uid://chknkni7l8ush" path="res://Scripts/preasure_plate.gd" id="2_n1mui"]
+[ext_resource type="AudioStream" uid="uid://ddcd7vif4qilt" path="res://Sounds/preasure_plate.wav" id="3_n1mui"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bb4fv"]
+atlas = ExtResource("1_w1nol")
+region = Rect2(0, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3uaxk"]
+atlas = ExtResource("1_w1nol")
+region = Rect2(32, 0, 32, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_137vc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bb4fv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3uaxk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n1mui"]
+size = Vector2(32, 8)
+
+[node name="preasure_plate" type="AnimatedSprite2D" unique_id=849103481]
+sprite_frames = SubResource("SpriteFrames_137vc")
+script = ExtResource("2_n1mui")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1429099463]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1432817433]
+position = Vector2(0, 4)
+shape = SubResource("RectangleShape2D_n1mui")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1878297439]
+stream = ExtResource("3_n1mui")
+
+[connection signal="body_entered" from="Area2D" to="." method="_body_entered_on_preasure_plate"]

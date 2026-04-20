@@ -1,9 +1,6 @@
-res://Scenes/rock.tscn
 res://Scenes/Leve1.tscn
-res://Scenes/player.tscn
-res://door.gd
-res://Scenes/door.tscn
-res://Scenes/lever.tscn
-res://Scripts/door.gd
+res://Scenes/preasure_plate.tscn
 res://Scripts/lever.gd
-res://Scenes/Player.tscn
+res://Scenes/rock.tscn
+res://Scenes/lever.tscn
+res://Scripts/preasure_plate.gd

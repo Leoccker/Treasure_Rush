@@ -3,15 +3,15 @@
 [ext_resource type="Texture2D" uid="uid://b5y4pujwgniaf" path="res://Asset/Others/rock.png" id="1_lgx4v"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cbt5b"]
-radius = 48.0
+radius = 50.0
 
 [node name="Rock" type="RigidBody2D" unique_id=1226513812]
 mass = 16.426
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1169172890]
-shape = SubResource("CircleShape2D_cbt5b")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=620868358]
 position = Vector2(0, 4.7683716e-07)
 scale = Vector2(3.3183591, 3.2851565)
 texture = ExtResource("1_lgx4v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1169172890]
+shape = SubResource("CircleShape2D_cbt5b")
