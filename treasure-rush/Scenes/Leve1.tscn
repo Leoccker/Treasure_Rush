@@ -1,9 +1,12 @@
 [gd_scene format=4 uid="uid://bhyh2r8vrs6s0"]
 
+[ext_resource type="Script" uid="uid://dp57mjm6bc83" path="res://Scenes/level_1.gd" id="1_q3use"]
 [ext_resource type="Texture2D" uid="uid://c5hkfh637hn5q" path="res://Asset/Others/Assets.png" id="1_wtcfe"]
 [ext_resource type="PackedScene" uid="uid://b3hhi5sbogxaf" path="res://Scenes/Player.tscn" id="2_0e48y"]
 [ext_resource type="PackedScene" uid="uid://clcy0oj71nm5n" path="res://Scenes/rock.tscn" id="3_epypp"]
-[ext_resource type="PackedScene" uid="uid://cbsv2f3nxow5s" path="res://Scenes/lever.tscn" id="4_ie48d"]
+[ext_resource type="PackedScene" uid="uid://dnephby7ecnx0" path="res://Scenes/preasure_plate.tscn" id="4_i8jss"]
+[ext_resource type="Texture2D" uid="uid://cnxfjmiu8iub8" path="res://Asset/Others/preasure_plate.png" id="5_87wfd"]
+[ext_resource type="PackedScene" uid="uid://clj3r65o8u3v1" path="res://Scenes/door.tscn" id="6_87wfd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0e48y"]
 texture = ExtResource("1_wtcfe")
@@ -386,7 +389,30 @@ texture = ExtResource("1_wtcfe")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_0e48y")
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_q3use"]
+atlas = ExtResource("5_87wfd")
+region = Rect2(0, 0, 32, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0myuk"]
+atlas = ExtResource("5_87wfd")
+region = Rect2(0, 16, 32, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_t7eou"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q3use")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0myuk")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Level1" type="Node2D" unique_id=1071906427]
+script = ExtResource("1_q3use")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1001555025]
 position = Vector2(0.33333334, 0)
@@ -395,11 +421,18 @@ tile_map_data = PackedByteArray("AAABAAQAAAABAAMAAAACAAQAAAACAAMAAAADAAQAAAACAAM
 tile_set = SubResource("TileSet_epypp")
 
 [node name="Player" parent="." unique_id=1948658314 instance=ExtResource("2_0e48y")]
+z_index = 1
 position = Vector2(123, 55)
 
 [node name="Rock" parent="." unique_id=1226513812 instance=ExtResource("3_epypp")]
 position = Vector2(477, 319)
 
-[node name="Lever" parent="." unique_id=2024678898 instance=ExtResource("4_ie48d")]
-position = Vector2(103, 472)
-scale = Vector2(3, 2.75)
+[node name="Preasure Plate" parent="." unique_id=1605394285 instance=ExtResource("4_i8jss")]
+position = Vector2(98.00001, 504)
+scale = Vector2(3, 3)
+sprite_frames = SubResource("SpriteFrames_t7eou")
+
+[node name="Door" parent="." unique_id=2024678898 instance=ExtResource("6_87wfd")]
+position = Vector2(1085, 59)
+scale = Vector2(3, 3)
+next_scene = "uid://b0p7ys7bd1yll"

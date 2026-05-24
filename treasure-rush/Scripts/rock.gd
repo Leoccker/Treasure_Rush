@@ -1,6 +1,7 @@
 extends RigidBody2D
 
 func _ready() -> void:
+	add_to_group("rock")
 	GravityManager.gravity_changed.connect(_on_gravity_changed)
 	_update_gravity()
 
