@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dnephby7ecnx0"]
 
 [ext_resource type="Texture2D" uid="uid://cnxfjmiu8iub8" path="res://Asset/Others/preasure_plate.png" id="1_w1nol"]
-[ext_resource type="Script" uid="uid://gilam2w5xi5x" path="res://Scenes/preasure_plate.gd" id="2_bb4fv"]
+[ext_resource type="Script" uid="uid://gilam2w5xi5x" path="res://Scripts/preasure_plate.gd" id="2_bb4fv"]
 [ext_resource type="AudioStream" uid="uid://rh44e5yvdc3l" path="res://Sounds/lever.wav" id="2_n1mui"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n1mui"]
@@ -45,4 +45,5 @@ debug_color = Color(1, 1, 1, 0.41960785)
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=612959895]
 stream = ExtResource("2_n1mui")
 
+[connection signal="plate_on" from="." to="." method="_on_plate_on"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]

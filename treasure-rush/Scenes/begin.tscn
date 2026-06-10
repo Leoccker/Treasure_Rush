@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b0prjq1phfbw4"]
+
+[node name="begin" type="Node2D" unique_id=939182648]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=953760904]
+
+[node name="Button" type="Button" parent="." unique_id=98420433]
+offset_left = 296.0
+offset_top = 188.0
+offset_right = 386.0
+offset_bottom = 219.0
+scale = Vector2(0.9804792, 1)
+text = "COMEÇAR"
