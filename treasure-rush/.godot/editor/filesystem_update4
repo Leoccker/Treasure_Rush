@@ -7,3 +7,4 @@ res://Scenes/game_over.tscn
 res://Scenes/final.tscn
 res://Scripts/character_body_2d.gd
 res://Scenes/rock.tscn
+res://Scenes/level_4.tscn
