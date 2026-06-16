@@ -1,8 +1,8 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1781567138
+::res://::1781569796
 icon.svg::CompressedTexture2D::6515281322927760158::1779656432::1779656432::1::::<><><>0<>0<>c2880f33bae11ffb752ce3bf5c4d2dd6<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://Asset/::1781568386
-::res://Asset/Others/::1781568336
+::res://Asset/Others/::1781568744
 alavanca.png::CompressedTexture2D::8682906208396362934::1779656432::1779656432::1::::<><><>0<>0<>b56988026cfd398adf1d484b6d0601aa<>res://.godot/imported/alavanca.png-dc982eece41c3b380c735bd1c60c42d4.ctex::
 Assets.png::CompressedTexture2D::6893573836570414904::1781565989::1781052160::1::::<><><>0<>0<>139ae1545385b8a64e4b6491575a1ec1<>res://.godot/imported/Assets.png-23860317fbd602112019b254146f7857.ctex::
 ballon.png::CompressedTexture2D::4635194207041960420::1781565989::1781565989::1::::<><><>0<>0<>a3ccc274bc75df4b32d4c7fb0f7f24da<>res://.godot/imported/ballon.png-fb745f5000d7c4eda36c6f943dcb88d4.ctex::
@@ -202,7 +202,7 @@ Water_2_16x16.png::CompressedTexture2D::7561901414636853013::1779656432::1779656
 Water_3_16x16.png::CompressedTexture2D::4122720727679564215::1779656432::1779656432::1::::<><><>0<>0<>4106ced79b932d70777bb09ff46da7b2<>res://.godot/imported/Water_3_16x16.png-9b6de332a0d2d01ee2c18fc109861f5e.ctex::
 Water_4_16x16.png::CompressedTexture2D::5915918981090658127::1779656432::1779656432::1::::<><><>0<>0<>e98e5765862b39bbe75128f0af28f0fc<>res://.godot/imported/Water_4_16x16.png-a436b6109d54e7e6585c3363c1fa9478.ctex::
 Water_5_16x16.png::CompressedTexture2D::4379015519433882997::1779656432::1779656432::1::::<><><>0<>0<>ed1d5660886d965c3f3254204049a9fe<>res://.godot/imported/Water_5_16x16.png-c37e553cdedb9beef08310c2630ad00e.ctex::
-::res://Scenes/::1781568531
+::res://Scenes/::1781569667
 baloon.tscn::PackedScene::761555652099525306::1781565989::0::1::::<><><>0<>0<><>::uid://c1lvox332nyov::::res://Scripts/baloon.gd<>uid://b7bk8a6dtpmdg::::res://Asset/Others/ballon.png
 begin.tscn::PackedScene::4173156583206582533::1781567660::0::1::::<><><>0<>0<><>::uid://ce5g5gs85sk8c::::res://Scripts/begin.gd<>uid://druubw1jdmmv4::::res://Asset/Others/begin.png
 door.tscn::PackedScene::5565230156733941700::1781565989::0::1::::<><><>0<>0<><>::uid://c2vfi6d67rnxs::::res://Asset/Others/door.png<>uid://dcqyagsu0c2sk::::res://Scripts/door.gd
@@ -211,10 +211,11 @@ game_over.tscn::PackedScene::5994403066468281178::1781568077::0::1::::<><><>0<>0
 kill_zone.tscn::PackedScene::2109549876039126926::1781566878::0::1::::<><><>0<>0<><>::uid://cgdmt5akckfug::::res://Scripts/kill_zone.gd
 Level_1.tscn::PackedScene::2927761835494663545::1781568531::0::1::::<><><>0<>0<><>::uid://dp57mjm6bc83::::res://Scripts/level_1.gd<>uid://c5hkfh637hn5q::::res://Asset/Others/Assets.png<>uid://b3hhi5sbogxaf::::res://Scenes/Player.tscn<>uid://clcy0oj71nm5n::::res://Scenes/rock.tscn<>uid://dnephby7ecnx0::::res://Scenes/preasure_plate.tscn<>uid://cnxfjmiu8iub8::::res://Asset/Others/preasure_plate.png<>uid://clj3r65o8u3v1::::res://Scenes/door.tscn<>uid://5b48i4dymxyc::::res://Scenes/kill_zone.tscn
 Level_2.tscn::PackedScene::4174094238681590017::1781568200::0::1::::<><><>0<>0<><>::uid://b3hhi5sbogxaf::::res://Scenes/Player.tscn<>uid://c5hkfh637hn5q::::res://Asset/Others/Assets.png<>uid://b0q3y061x35rn::::res://Scenes/platform.tscn<>uid://cbsv2f3nxow5s::::res://Scenes/lever.tscn<>uid://clj3r65o8u3v1::::res://Scenes/door.tscn<>uid://5b48i4dymxyc::::res://Scenes/kill_zone.tscn
-level_3.tscn::PackedScene::8509719552114634183::1781567872::0::1::::<><><>0<>0<><>::uid://c5hkfh637hn5q::::res://Asset/Others/Assets.png<>uid://b5u2818f6mqt0::::res://Asset/Others/props1.png<>uid://4hepcmlb0lkw::::res://Asset/Others/props2.png<>uid://dy0oqh1xakn7::::res://Asset/Others/sheet.png<>uid://b3hhi5sbogxaf::::res://Scenes/Player.tscn<>uid://k35yfevn847o::::res://Scenes/baloon.tscn<>uid://cbsv2f3nxow5s::::res://Scenes/lever.tscn<>uid://clj3r65o8u3v1::::res://Scenes/door.tscn<>uid://5b48i4dymxyc::::res://Scenes/kill_zone.tscn
+level_3.tscn::PackedScene::8509719552114634183::1781569477::0::1::::<><><>0<>0<><>::uid://c5hkfh637hn5q::::res://Asset/Others/Assets.png<>uid://b5u2818f6mqt0::::res://Asset/Others/props1.png<>uid://4hepcmlb0lkw::::res://Asset/Others/props2.png<>uid://dy0oqh1xakn7::::res://Asset/Others/sheet.png<>uid://b3hhi5sbogxaf::::res://Scenes/Player.tscn<>uid://k35yfevn847o::::res://Scenes/baloon.tscn<>uid://cbsv2f3nxow5s::::res://Scenes/lever.tscn<>uid://clj3r65o8u3v1::::res://Scenes/door.tscn<>uid://5b48i4dymxyc::::res://Scenes/kill_zone.tscn
+level_4.tscn::PackedScene::5138968103971455028::1781569667::0::1::::<><><>0<>0<><>::uid://c5hkfh637hn5q::::res://Asset/Others/Assets.png<>uid://b3hhi5sbogxaf::::res://Scenes/Player.tscn<>uid://dnephby7ecnx0::::res://Scenes/preasure_plate.tscn<>uid://clcy0oj71nm5n::::res://Scenes/rock.tscn<>uid://clj3r65o8u3v1::::res://Scenes/door.tscn
 lever.tscn::PackedScene::4881512590374085734::1781045878::0::1::::<><><>0<>0<><>::uid://dvycgxlw62mb3::::res://Asset/Others/alavanca.png<>uid://bjwge1lgpnf30::::res://Scripts/lever.gd<>uid://rh44e5yvdc3l::::res://Sounds/lever.wav
 platform.tscn::PackedScene::4175916115745928599::1781565989::0::1::::<><><>0<>0<><>::uid://dhr3wb47vclo4::::res://Asset/Others/plataform.png<>uid://b5kvj8414u3iw::::res://Scripts/platform.gd
-Player.tscn::PackedScene::4366599858708421009::1781568402::0::1::::<><><>0<>0<><>::uid://bpg0pwm503bpx::::res://Scripts/character_body_2d.gd<>uid://b5u2818f6mqt0::::res://Asset/Others/props1.png<>uid://4hepcmlb0lkw::::res://Asset/Others/props2.png
+Player.tscn::PackedScene::4366599858708421009::1781568870::0::1::::<><><>0<>0<><>::uid://bpg0pwm503bpx::::res://Scripts/character_body_2d.gd<>uid://b5u2818f6mqt0::::res://Asset/Others/props1.png
 preasure_plate.tscn::PackedScene::8080897875896823979::1781566867::0::1::::<><><>0<>0<><>::uid://cnxfjmiu8iub8::::res://Asset/Others/preasure_plate.png<>uid://gilam2w5xi5x::::res://Scripts/preasure_plate.gd<>uid://rh44e5yvdc3l::::res://Sounds/lever.wav
 rock.tscn::PackedScene::5550550006306041345::1781568499::0::1::::<><><>0<>0<><>::uid://b5y4pujwgniaf::::res://Asset/Others/rock.png<>uid://cy6qjabkcm25w::::res://Scripts/rock.gd
 ::res://Scripts/::1781568402
