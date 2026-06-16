@@ -3,6 +3,8 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -450.0
 
+@onready var anim: AnimatedSprite2D = $AnimatedSprite2D
+
 func _ready() -> void:
 	add_to_group("player")
 
@@ -12,6 +14,7 @@ func _physics_process(delta: float) -> void:
 
 	var grav_mult := 1.0
 	var jump_dir := 1.0
+
 	if GravityManager.inverted:
 		up_direction = Vector2(0, 1)
 		grav_mult = -1.0
@@ -28,15 +31,23 @@ func _physics_process(delta: float) -> void:
 		velocity.y = JUMP_VELOCITY * jump_dir
 
 	var direction := Input.get_axis("ui_left", "ui_right")
+
 	if direction:
 		velocity.x = direction * SPEED
+
+		if direction > 0:
+			anim.play("right")
+		elif direction < 0:
+			anim.play("left")
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+		anim.stop() # ou anim.play("idle"), se existir
 
 	move_and_slide()
 
 	for i in get_slide_collision_count():
 		var collision = get_slide_collision(i)
+
 		if collision.get_collider() is RigidBody2D:
 			var body = collision.get_collider()
 			body.apply_central_impulse(-collision.get_normal() * 200)

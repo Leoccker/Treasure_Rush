@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://o5wk57ajamnd"]
 
 [ext_resource type="Script" uid="uid://blykeh35knj31" path="res://Scripts/final.gd" id="1_61mla"]
-[ext_resource type="Texture2D" uid="uid://b56feni5v51wr" path="res://Asset/final.png" id="2_wgkft"]
+[ext_resource type="Texture2D" uid="uid://d2u6w6ddhg8t8" path="res://Asset/Others/end.png" id="2_61mla"]
 [ext_resource type="AudioStream" uid="uid://bqrd2nx5tpfso" path="res://Sounds/end.mp3" id="3_k2yra"]
 
 [node name="Final" type="Node2D" unique_id=979127822]
 script = ExtResource("1_61mla")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1530989514]
-position = Vector2(574, 324)
-scale = Vector2(0.75260407, 0.63281244)
-texture = ExtResource("2_wgkft")
+position = Vector2(584, 328)
+scale = Vector2(0.7542925, 0.7074796)
+texture = ExtResource("2_61mla")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1794537889]
 stream = ExtResource("3_k2yra")

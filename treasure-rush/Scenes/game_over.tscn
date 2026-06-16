@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://crny7b1lj8ses"]
+
+[ext_resource type="Script" uid="uid://b37j8used7ci2" path="res://Scripts/game_over.gd" id="1_ojehl"]
+[ext_resource type="Texture2D" uid="uid://bf6woyick267u" path="res://Asset/Others/game_over.png" id="2_8fo1c"]
+
+[node name="game_over" type="Node2D" unique_id=2131638077]
+script = ExtResource("1_ojehl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=528971978]
+position = Vector2(570.00006, 320)
+scale = Vector2(0.7099282, 0.7268863)
+texture = ExtResource("2_8fo1c")
+
+[node name="Button" type="Button" parent="." unique_id=94785837]
+offset_left = 510.0
+offset_top = 510.0
+offset_right = 560.0
+offset_bottom = 541.0
+scale = Vector2(3, 3)
+text = "Início"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
